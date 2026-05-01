@@ -1,0 +1,56 @@
+[project]
+authors = [
+  {name = "Salvatore D'Angelo", email = "sasadangelo@gmail.com"},
+]
+dependencies = [
+  "mcp>=1.0.0",
+]
+description = "A simple MCP server for filesystem operations"
+keywords = ["mcp", "filesystem", "server"]
+name = "filesystem-mcp"
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+version = "0.1.0"
+
+[dependency-groups]
+dev = [
+  "bandit>=1.8.6",
+  "black>=23.12.1",
+  "coverage>=7.11.0",
+  "detect-secrets>=1.5.0",
+  "flake8>=6.1.0",
+  "isort>=5.13.2",
+  "mypy>=1.18.2",
+  "poethepoet>=0.37.0",
+  "pre-commit>=3.8.0",
+  "pytest>=8.4.2",
+  "radon>=6.0.1",
+]
+
+[tool.isort]
+include_trailing_comma = true
+line_length = 120
+multi_line_output = 3
+profile = "black"
+skip = [".venv", "__pycache__", "build", "dist"]
+
+[tool.flake8]
+exclude = [".venv"]
+extend-ignore = ["E203", "W503"]
+max-line-length = 120
+
+[tool.black]
+exclude = '''
+/(
+    \.venv
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+include = '\.pyi?$'
+line-length = 120
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

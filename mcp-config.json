@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "uv",
+            "args": [
+                "run",
+                "python",
+                "-m",
+                "filesystem-mcp.server"
+            ],
+            "cwd": "/Users/sasadangelo/github.com/sasadangelo/filesystem-mcp"
+        }
+    }
+}

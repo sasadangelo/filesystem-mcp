@@ -1,0 +1,10 @@
+{
+    "command": "uv",
+    "args": [
+        "run",
+        "python",
+        "-m",
+        "filesystem_mcp.server"
+    ],
+    "env": {}
+}
