@@ -56,15 +56,7 @@ tests/unit/test_server.py::test_list_directory_nonexistent PASSED
 tests/unit/test_server.py::test_read_file_nonexistent PASSED
 ```
 
-### Method 2: Manual Function Testing
-
-Run a quick manual test to verify basic functionality:
-
-```bash
-PYTHONPATH=src uv run python test_server.py
-```
-
-### Method 3: MCP Inspector (Recommended for Integration Testing)
+### Method 2: MCP Inspector (Recommended for Integration Testing)
 
 MCP Inspector is a visual tool for testing MCP servers. It provides an interactive web interface to test your server's tools.
 
