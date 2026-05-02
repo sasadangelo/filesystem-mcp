@@ -289,16 +289,22 @@ This test verifies that:
 Ideas to evolve the server:
 
 - [x] **Implement path restrictions (sandbox)** - ✅ Completed!
-- [ ] Add operation logging and audit trails
-- [ ] Add `delete_file` operation
-- [ ] Add `create_directory` operation
-- [ ] Implement file search with patterns
-- [ ] Add support for binary files
-- [ ] Support for recursive operations
-- [ ] File metadata (size, modification date, permissions)
-- [ ] Add HTTP transport support
-- [ ] Add configurable file size limits
-- [ ] Add rate limiting for operations
+
+- [ ] Add `create_directory` operation (Phase 1)
+- [ ] Add `delete_file` operation (Phase 1)
+- [ ] Add `get_file_info` operation (Phase 1)
+- [ ] Add `list_allowed_directories` operation (Phase 1)
+- [ ] Add `head/tail` to the `read_file` operation (Phase 2)
+- [ ] Add `list_directory_with_sizes` operation (Phase 2)
+- [ ] Add `search_files` operation (Phase 3)
+- [ ] Add `directory_tree` operation (Phase 3)
+- [ ] Add `read_multiple_files` operation (Phase 3)
+- [ ] Add `read_media_file` operation (Phase 3)
+- [ ] Add `edit_file` operation (Phase 3)
+- [ ] Support for recursive operations (Phase 4)
+- [ ] Add HTTP transport support (Phase 4)
+- [ ] Add configurable file size limits (Phase 4)
+- [ ] Add rate limiting for operations (Phase 4)
 
 ## 📝 License
 
