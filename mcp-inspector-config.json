@@ -1,8 +1,0 @@
-{
-    "mcpServers": {
-        "filesystem": {
-            "command": "./run_server.sh",
-            "args": []
-        }
-    }
-}

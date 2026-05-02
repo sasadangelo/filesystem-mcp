@@ -6,9 +6,12 @@
                 "run",
                 "python",
                 "-m",
-                "filesystem-mcp.server"
+                "filesystem_mcp.server",
+                "sandbox"
             ],
-            "cwd": "/Users/sasadangelo/github.com/sasadangelo/filesystem-mcp"
+            "env": {
+                "PYTHONPATH": "src"
+            }
         }
     }
 }
